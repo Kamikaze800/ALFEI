@@ -8,6 +8,7 @@
 }
 body {
   font-family: "JetBrains Mono", monospace;
+  margin: 0;
 }
 .container {
   max-width: 1280px;
@@ -147,6 +148,136 @@ header {
   box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
+
+/* Контейнер для фото */
+.photo-strip {
+  position: relative;
+  width: 100%; /* Фиксированная ширина */
+  height: 100px; /* Новая высота */
+  background-image: url('../img/bg.jpeg'); 
+  overflow: hidden; /* Обрезаем лишнее */
+}
+
+/* Затемнение через полупрозрачный слой */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Черный с прозрачностью 50% */
+}
+
+/* Текст */
+.text-contacts {
+  position: absolute;
+  color: white; /* Цвет текста */
+  font-size: 28px; /* Размер текста */
+  z-index: 1; /* Поверх затемнения */
+  font-weight: 400;
+}
+
+
+
+/* Общий контейнер */
+.stage-curtain {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+/* Блок с текстом */
+.whisper-box {
+  border-radius: 40px;
+  background: rgb(47, 79, 79);
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 70%;
+  min-height: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.whisper-box *{
+margin: 20px 50% 20px 20px;
+}
+
+.info-line {
+  position: relative;
+  padding: 5px;
+}
+
+/* Полоска после каждой строки, кроме телефонов и последней */
+.info-line:not(:last-child):not(.emeil-adress)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Длина полоски */
+  height: 1px;
+  background: rgb(255, 255, 255);
+}
+
+/* Отступ для второго номера телефона */
+.phone-indent {
+  margin-left: 20px; /* Отступ слева */
+}
+
+/* Исключаем полоску перед вторым номером */
+.info-line:nth-child(3)::after {
+  display: none; /* Убираем полоску перед первым номером телефона */
+}
+
+/* Стили для второго <p> */
+.whisper-box p {
+  margin-top: 40px;
+  
+}
+/* Блок карты */
+.map-tapestry {
+  background: #ffffff;
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Контейнер для выравнивания блоков в строку */
+.contacts-stage {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Первый блок с тенями */
+.contacts-shadow-realm {
+  border-radius: 36px;
+  box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(239, 239, 239);
+  padding: 30px;
+  width: 300px;
+}
+
+/* Второй блок — просто текст */
+.contacts-whisper {
+  width: 300px;
+  padding: 30px;
+}
+
+/* Общие стили для текста */
+p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
 footer {
   margin-top: 30px;
   color: white;
@@ -166,4 +297,23 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .whisper-box {
+    width: 90%;
+  }
+  .map-tapestry {
+    width: 60%;
+    height: 200px;
+  }
+  .whisper-box {
+    border-radius: 10px;
+  }
+  .whisper-box *{
+    margin: 5px 80% 5px 5px;
+    font-size: 10px;
+    }
 }
