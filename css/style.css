@@ -5,6 +5,8 @@
   --footer_size: 100px;
   --sales__height: 350px;
   --main__bg_height: 900px;
+  --white-gray: #ebeaea;
+  --doc__height: 650px;
 }
 body {
   font-family: "JetBrains Mono", monospace;
@@ -162,4 +164,94 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+/* услуги */
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: var(--white-gray);
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  font-size: 26px;
+  font-weight: 400;
+}
+.card > * {
+  display: inline-block;
+}
+.card img {
+  aspect-ratio: 1 / 1;
+}
+
+.service__inner {
+  display: flex;
+}
+.build__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.build__left h1 {
+  font-size: 36px;
+}
+.build__left p {
+  font-size: 24px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.build__right {
+  width: 593px;
+}
+.build__right img {
+  max-width: 100%;
+}
+.build__right p {
+  font-size: 30px;
+  border-radius: 51px;
+  box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(247, 247, 247);
+  padding: 30px;
+}
+
+.service__doc {
+  position: relative;
+}
+.doc__inner {
+  display: flex;
+  gap: 40px;
+
+  color: white;
+}
+.doc__bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: var(--green);
+  height: var(--doc__height);
+}
+.doc__inner img {
+  width: 100%;
+}
+.doc__inner h1 {
+  font-size: 36px;
+  text-align: right;
+}
+.doc__inner p {
+  font-size: 24px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.venki__inner {
+  display: flex;
+  gap: 40px;
+}
+.venki__inner h1 {
+  font-size: 36px;
+}
+.venki__inner p {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-right: 20px;
 }
