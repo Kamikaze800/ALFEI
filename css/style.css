@@ -343,4 +343,18 @@ footer {
     padding: 25px;
     width: auto;
   }
+  .footer__left {
+    order: 1;
+  }
+  .footer__cnt {
+    order: 3;
+  }
+  .footer__right {
+    order: 2;
+  }
+  .footer__inner {
+    flex-direction: column;
+    gap: 20px;
+    order: 3;
+  }
 }
