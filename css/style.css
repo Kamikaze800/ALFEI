@@ -6,7 +6,7 @@
   --sales__height: 350px;
   --main__bg_height: 900px;
   --white-gray: #ebeaea;
-  --doc__height: 650px;
+  --doc__height: 700px;
 }
 body {
   font-family: "JetBrains Mono", monospace;
@@ -52,6 +52,7 @@ header {
   width: 100%;
 }
 .main__bg img {
+  width: 100%;
   height: var(--main__bg_height);
   filter: brightness(40%);
 }
@@ -174,6 +175,13 @@ footer {
 }
 
 /* услуги */
+.cards__inner {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -190,9 +198,15 @@ footer {
 .card img {
   aspect-ratio: 1 / 1;
 }
-
+.service__build {
+  margin-top: 50px;
+}
 .service__inner {
   display: flex;
+  margin: 0 auto;
+}
+.service__inner > * {
+  margin: 0 auto;
 }
 .build__left {
   display: flex;
@@ -225,10 +239,16 @@ footer {
   position: relative;
 }
 .doc__inner {
+  background: var(--green);
+  padding-top: 30px;
   display: flex;
+  flex-direction: column;
   gap: 40px;
-
   color: white;
+}
+.doc__inner-in {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .doc__bg {
   position: absolute;
@@ -237,17 +257,20 @@ footer {
   background: var(--green);
   height: var(--doc__height);
 }
-.doc__inner img {
+.doc__img {
+  margin-right: 15px; /* Отступ справа от картинки */
+  margin-bottom: 10px; /* Отступ снизу */
   width: 100%;
+  max-width: 500px;
+  float: left;
 }
-.doc__inner h1 {
+.doc__title {
   font-size: 36px;
-  text-align: right;
+  text-align: center;
 }
-.doc__inner p {
+.doc__text {
+  margin: 20px;
   font-size: 24px;
-  padding-left: 20px;
-  padding-top: 20px;
 }
 
 .venki__inner {
@@ -261,6 +284,25 @@ footer {
   font-size: 24px;
   padding-top: 20px;
   padding-right: 20px;
+}
+
+@media (max-width: 1280px) {
+  .doc__text {
+    font-size: 18px;
+  }
+  .venki__inner {
+    flex-direction: column;
+  }
+  .service__inner {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .doc__inner {
+    flex-wrap: wrap;
+  }
+  .doc__inner img {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -343,6 +385,10 @@ footer {
     padding: 25px;
     width: auto;
   }
+  footer {
+    font-size: 13px;
+    text-align: center;
+  }
   .footer__left {
     order: 1;
   }
@@ -352,7 +398,11 @@ footer {
   .footer__right {
     order: 2;
   }
+  .footer__bg {
+    height: calc(var(--footer_size) + 40px);
+  }
   .footer__inner {
+    padding-top: 20px;
     flex-direction: column;
     gap: 20px;
     order: 3;
