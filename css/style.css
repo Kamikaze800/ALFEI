@@ -305,14 +305,21 @@ footer {
 }
 
 /* услуги */
-.cards__inner {
+/*  */
+.service {
+  margin-top: 70px;
+}
+.services__cards {
+  margin-top: 10px;
+}
+.services__cards__inner {
   display: flex;
   gap: 40px;
   justify-content: center;
   margin-top: 50px;
   flex-wrap: wrap;
 }
-.card {
+.service__card {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -322,10 +329,12 @@ footer {
   font-size: 26px;
   font-weight: 400;
 }
-.card > * {
+.service__title {
+}
+.service__card > * {
   display: inline-block;
 }
-.card img {
+.service__card__img {
   aspect-ratio: 1 / 1;
 }
 .service__build {
@@ -338,30 +347,37 @@ footer {
 .service__inner > * {
   margin: 0 auto;
 }
+.card__text {
+  padding: 5px 20px;
+  text-align: center;
+}
 .build__left {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.build__left h1 {
+.service__title {
   font-size: 36px;
 }
-.build__left p {
+.build__left__text {
   font-size: 24px;
   padding-left: 20px;
   padding-top: 20px;
 }
 .build__right {
   width: 593px;
+  display: flex;
+  flex-direction: column;
 }
-.build__right img {
+.build__right__img {
   max-width: 100%;
+
+  margin: 0 auto;
 }
-.build__right p {
-  font-size: 30px;
+.build__right__text {
+  font-size: 24px;
   border-radius: 51px;
   box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-  background: rgb(247, 247, 247);
   padding: 30px;
 }
 
@@ -398,18 +414,12 @@ footer {
   font-size: 36px;
   text-align: center;
 }
-.doc__text {
-  margin: 20px;
+.service__text {
+  padding: 10px;
   font-size: 24px;
 }
 
-.venki__inner {
-}
-.venki__inner h1 {
-  font-size: 36px;
-}
 .venki__text {
-  font-size: 24px;
   padding-top: 20px;
   padding-right: 20px;
 }
@@ -422,7 +432,8 @@ footer {
   text-align: center;
 }
 @media (max-width: 1280px) {
-  .doc__text {
+  .service__text {
+    padding: 20px;
     font-size: 18px;
   }
   .venki__inner {
@@ -443,6 +454,12 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .service__card {
+    width: 200px;
+  }
+  .card__text {
+    font-size: 16px;
+  }
   .container {
     padding: 0 10px;
   }
@@ -506,6 +523,9 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .service__text {
+    font-size: 18px;
+  }
   .about {
     margin-top: 35px;
     flex-direction: column;
@@ -553,5 +573,8 @@ footer {
     flex-direction: column;
     gap: 20px;
     order: 3;
+  }
+  .service__title {
+    font-size: 22px;
   }
 }
