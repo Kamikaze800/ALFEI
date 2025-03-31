@@ -7,736 +7,523 @@
   --main__bg_height: 900px;
   --white-gray: #ebeaea;
   --doc__height: 700px;
-  body {
-    font-family: "JetBrains Mono", monospace;
-    margin: 0;
-  }
-  .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  header {
-    background-color: var(--green);
-    color: white;
-  }
+}
+body {
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background-color: var(--green);
+  color: white;
+}
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-  }
-  .header__logo {
-    font-size: 36px;
-  }
-  .nav {
-    display: flex;
-    gap: 70px;
-    align-items: center;
-  }
-  .burger {
-    display: none;
-  }
-  .nav__krest {
-    display: none;
-  }
-  .main {
-    position: relative;
-    color: white;
-    height: var(--main__bg_height);
-  }
-  .main__bg {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-  }
-  .main__bg img {
-    width: 100%;
-    height: var(--main__bg_height);
-    filter: brightness(40%);
-  }
-  .main__inner {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main__inner > * {
-    display: inline-block;
-    width: max-content;
-  }
-  .main__block {
-  }
-  .main__phrase {
-    margin-top: 200px;
-    font-size: 28px;
-  }
-  .main__title {
-    margin-top: 50px;
-    font-size: 88px;
-  }
-  .main__subtitle {
-    font-size: 18px;
-    float: right;
-  }
-  .main__products {
-    margin-top: 100px;
-    font-size: 28px;
-  }
-  .about {
-    color: black;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 70px;
-  }
-  .about__block {
-  }
-  .about__title {
-    font-size: 26px;
-  }
-  .about__text {
-  }
-  .section__text {
-    padding: 30px;
-    font-size: 20px;
-  }
-  .about img {
-    width: 540px;
-    max-height: 540px;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.header__logo {
+  font-size: 36px;
+}
+.nav {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+.burger {
+  display: none;
+}
+.nav__krest {
+  display: none;
+}
+.main {
+  position: relative;
+  color: white;
+  height: var(--main__bg_height);
+}
+.main__bg {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.main__bg img {
+  width: 100%;
+  height: var(--main__bg_height);
+  filter: brightness(40%);
+}
+.main__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__inner > * {
+  display: inline-block;
+  width: max-content;
+}
+.main__block {
+}
+.main__phrase {
+  margin-top: 200px;
+  font-size: 28px;
+}
+.main__title {
+  margin-top: 50px;
+  font-size: 88px;
+}
+.main__subtitle {
+  font-size: 18px;
+  float: right;
+}
+.main__products {
+  margin-top: 100px;
+  font-size: 28px;
+}
+.about {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 70px;
+}
+.about__block {
+}
+.about__title {
+  font-size: 26px;
+}
+.about__text {
+}
+.section__text {
+  padding: 30px;
+  font-size: 20px;
+}
+.about img {
+  width: 540px;
+  max-height: 540px;
+}
 
-  .sales {
-    margin-top: 70px;
-    position: relative;
-    height: var(--sales__height);
-  }
-  .sales__bg {
-    position: absolute;
-    width: 100%;
-    height: var(--sales__height);
-    background: var(--green);
-    z-index: -1;
-  }
-  .sales__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  .sales__block {
-    gap: 100px;
-    margin-top: 30px;
-    display: flex;
-  }
-  .sales__block * {
-    display: inline-block;
-  }
-  .sale__text {
-    color: white;
-    font-size: 28px;
-    background: var(--green-light);
-    width: 610px;
-    padding: 50px;
-    border-radius: 20px;
-    text-align: center;
+.sales {
+  margin-top: 70px;
+  position: relative;
+  height: var(--sales__height);
+}
+.sales__bg {
+  position: absolute;
+  width: 100%;
+  height: var(--sales__height);
+  background: var(--green);
+  z-index: -1;
+}
+.sales__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.sales__block {
+  gap: 100px;
+  margin-top: 30px;
+  display: flex;
+}
+.sales__block * {
+  display: inline-block;
+}
+.sale__text {
+  color: white;
+  font-size: 28px;
+  background: var(--green-light);
+  width: 610px;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
 
-    box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-  }
-  .sale__btn {
-    background: var(--red);
-    padding: 15px 90px;
-    font-size: 16px;
-    color: white;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-top: 30px;
+  box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.sale__btn {
+  background: var(--red);
+  padding: 15px 90px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
 
-    box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-  }
+  box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
 
-  /* Контейнер для фото */
-  .photo-strip {
-    position: relative;
-    width: 100%; /* Фиксированная ширина */
-    height: 100px; /* Новая высота */
-    background-image: url("../img/bg.jpeg");
-    overflow: hidden; /* Обрезаем лишнее */
-  }
+/* Контейнер для фото */
+.photo-strip {
+  position: relative;
+  width: 100%; /* Фиксированная ширина */
+  height: 100px; /* Новая высота */
+  background-image: url("../img/bg.jpeg");
+  overflow: hidden; /* Обрезаем лишнее */
+}
 
-  /* Затемнение через полупрозрачный слой */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Черный с прозрачностью 50% */
-  }
+/* Затемнение через полупрозрачный слой */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Черный с прозрачностью 50% */
+}
 
-  /* Текст */
-  .text-contacts {
-    position: absolute;
-    color: white; /* Цвет текста */
-    font-size: 28px; /* Размер текста */
-    z-index: 1; /* Поверх затемнения */
-    font-weight: 400;
-  }
+/* Текст */
+.text-contacts {
+  position: absolute;
+  color: white; /* Цвет текста */
+  font-size: 28px; /* Размер текста */
+  z-index: 1; /* Поверх затемнения */
+  font-weight: 400;
+}
 
-  /* Общий контейнер */
-  .stage-curtain {
-    position: relative;
-    width: 70%;
-    max-width: 1200px;
-    margin: 50px auto;
-  }
+/* Общий контейнер */
+.stage-curtain {
+  position: relative;
+  width: 70%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
 
-  /* Блок с текстом */
+/* Блок с текстом */
+.whisper-box {
+  border-radius: 30px;
+  background: rgb(47, 79, 79);
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 70%;
+  min-height: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.whisper-box * {
+  margin: 10px 50% 10px 10px;
+}
+
+.info-line {
+  position: relative;
+  padding: 5px;
+}
+
+/* Полоска после каждой строки, кроме телефонов и последней */
+.info-line:not(:last-child):not(.emeil-adress)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Длина полоски */
+  height: 1px;
+  background: rgb(255, 255, 255);
+}
+
+/* Отступ для второго номера телефона */
+.phone-indent {
+  margin-left: 20px; /* Отступ слева */
+}
+
+/* Исключаем полоску перед вторым номером */
+.info-line:nth-child(3)::after {
+  display: none; /* Убираем полоску перед первым номером телефона */
+}
+
+/* Стили для второго <p> */
+.whisper-box p {
+  margin-top: 40px;
+}
+/* Блок карты */
+.map-tapestry {
+  background: #ffffff;
+  width: 50%;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Контейнер для выравнивания блоков в строку */
+.contacts-stage {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Первый блок с тенями */
+.contacts-shadow-realm {
+  border-radius: 30px;
+  box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(239, 239, 239);
+  padding: 30px;
+  width: 400px;
+}
+
+/* Второй блок — просто текст */
+.contacts-whisper {
+  width: 400px;
+  padding: 0px;
+}
+
+/* Общие стили для текста */
+p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  margin-top: 30px;
+  color: white;
+}
+.footer__bg {
+  position: absolute;
+  background: var(--green);
+  width: 100%;
+  height: var(--footer_size);
+  z-index: -1;
+}
+.footer__inner > * {
+  display: inline-block;
+}
+.footer__inner {
+  height: var(--footer_size);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* услуги */
+/*  */
+.service {
+  margin-top: 70px;
+}
+.services__cards {
+  margin-top: 10px;
+}
+.services__cards__inner {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.service__card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background: var(--white-gray);
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  font-size: 26px;
+  font-weight: 400;
+}
+.service__title {
+}
+.service__card > * {
+  display: inline-block;
+}
+.service__card__img {
+  aspect-ratio: 1 / 1;
+}
+.service__build {
+  margin-top: 50px;
+}
+.service__inner {
+  display: flex;
+  margin: 0 auto;
+}
+.service__inner > * {
+  margin: 0 auto;
+}
+.card__text {
+  padding: 5px 20px;
+  text-align: center;
+}
+.build__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.service__title {
+  font-size: 36px;
+}
+.build__left__text {
+  font-size: 24px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.build__right {
+  width: 593px;
+  display: flex;
+  flex-direction: column;
+}
+.build__right__img {
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+.build__right__text {
+  font-size: 24px;
+  border-radius: 51px;
+  box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+
+.service__doc {
+  position: relative;
+}
+.doc__inner {
+  background: var(--green);
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: white;
+}
+.doc__inner-in {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.doc__bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background: var(--green);
+  height: var(--doc__height);
+}
+.doc__img {
+  margin-right: 15px; /* Отступ справа от картинки */
+  margin-bottom: 10px; /* Отступ снизу */
+  width: 100%;
+  max-width: 500px;
+  float: left;
+}
+.doc__title {
+  font-size: 36px;
+  text-align: center;
+}
+.service__text {
+  padding: 10px;
+  font-size: 24px;
+}
+
+.venki__text {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.venki__img {
+  width: 100%;
+  max-width: 400px;
+  float: right;
+}
+.venki__title {
+  text-align: center;
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 1024px) {
   .whisper-box {
-    border-radius: 30px;
-    background: rgb(47, 79, 79);
-    padding: 20px;
-    color: white;
-    font-family: Arial, sans-serif;
-    width: 70%;
-    min-height: 200px;
-    position: relative;
-    z-index: 1;
+    max-width: 100%;
   }
 
-  .whisper-box * {
-    margin: 10px 50% 10px 10px;
-  }
-
-  .info-line {
-    position: relative;
-    padding: 5px;
-  }
-
-  /* Полоска после каждой строки, кроме телефонов и последней */
-  .info-line:not(:last-child):not(.emeil-adress)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Длина полоски */
-    height: 1px;
-    background: rgb(255, 255, 255);
-  }
-
-  /* Отступ для второго номера телефона */
-  .phone-indent {
-    margin-left: 20px; /* Отступ слева */
-  }
-
-  /* Исключаем полоску перед вторым номером */
-  .info-line:nth-child(3)::after {
-    display: none; /* Убираем полоску перед первым номером телефона */
-  }
-
-  /* Стили для второго <p> */
-  .whisper-box p {
-    margin-top: 40px;
-  }
-  /* Блок карты */
   .map-tapestry {
-    background: #ffffff;
-    width: 50%;
-    height: 350px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 2;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: 300px;
   }
+  .stage-curtain {
+    width: 90%;
+  }
+}
 
-  /* Контейнер для выравнивания блоков в строку */
-  .contacts-stage {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+/* catalog */
+
+.catalog__inner {
+}
+.catalog__main {
+  margin-top: 50px;
+  display: flex;
+}
+.catalog__btns {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.catalog__btns > * {
+  display: inline-block;
+}
+.filters__btn {
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 250px;
+  font-size: 20px;
+}
+.catalog__title {
+  font-size: 30px;
+}
+.filters__input {
+  width: 100px;
+}
+.catalog__price {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.filters__material-title {
+  margin-top: 20px;
+}
+.catalog__products {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.catalog__product {
+  background: var(--green);
+  border-radius: 20px;
+}
+.catalog__product-text {
+  padding: 20px;
+
+  color: white;
+}
+@media (max-width: 1280px) {
+  .service__text {
     padding: 20px;
+    font-size: 18px;
   }
-
-  /* Первый блок с тенями */
-  .contacts-shadow-realm {
-    border-radius: 30px;
-    box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-    background: rgb(239, 239, 239);
-    padding: 30px;
-    width: 400px;
-  }
-
-  /* Второй блок — просто текст */
-  .contacts-whisper {
-    width: 400px;
-    padding: 0px;
-  }
-
-  /* Общие стили для текста */
-  p {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-
-  footer {
-    margin-top: 30px;
-    color: white;
-  }
-  .footer__bg {
-    position: absolute;
-    background: var(--green);
-    width: 100%;
-    height: var(--footer_size);
-    z-index: -1;
-  }
-  .footer__inner > * {
-    display: inline-block;
-  }
-  .footer__inner {
-    height: var(--footer_size);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  /* услуги */
-  /*  */
-  .service {
-    margin-top: 70px;
-  }
-  .services__cards {
-    margin-top: 10px;
-  }
-  .services__cards__inner {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    margin-top: 50px;
-    flex-wrap: wrap;
-  }
-  .service__card {
-    display: flex;
+  .venki__inner {
     flex-direction: column;
-    width: 300px;
-    background: var(--white-gray);
-    border-radius: 30px;
-    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-    font-size: 26px;
-    font-weight: 400;
   }
-  .service__title {
-  }
-  .service__card > * {
-    display: inline-block;
-  }
-  .service__card__img {
-    aspect-ratio: 1 / 1;
-  }
-  .service__build {
-    margin-top: 50px;
+  .venki__text {
+    font-size: 18px;
   }
   .service__inner {
-    display: flex;
-    margin: 0 auto;
-  }
-  .service__inner > * {
-    margin: 0 auto;
-  }
-  .card__text {
-    padding: 5px 20px;
-    text-align: center;
-  }
-  .build__left {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .service__title {
-    font-size: 36px;
-  }
-  .build__left__text {
-    font-size: 24px;
-    padding-left: 20px;
-    padding-top: 20px;
-  }
-  .build__right {
-    width: 593px;
-    display: flex;
-    flex-direction: column;
-  }
-  .build__right__img {
-    max-width: 100%;
-
-    margin: 0 auto;
-  }
-  .build__right__text {
-    font-size: 24px;
-    border-radius: 51px;
-    box-shadow: inset 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-    padding: 30px;
-  }
-
-  .service__doc {
-    position: relative;
-  }
-  .doc__inner {
-    background: var(--green);
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    color: white;
-  }
-  .doc__inner-in {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  .doc__bg {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    background: var(--green);
-    height: var(--doc__height);
-  }
-  .doc__img {
-    margin-right: 15px; /* Отступ справа от картинки */
-    margin-bottom: 10px; /* Отступ снизу */
-    width: 100%;
-    max-width: 500px;
-    float: left;
-  }
-  .doc__title {
-    font-size: 36px;
-    text-align: center;
-  }
-  .service__text {
-    padding: 10px;
-    font-size: 24px;
-  }
-
-  .venki__text {
-    padding-top: 20px;
-    padding-right: 20px;
-  }
-  .venki__img {
-    width: 100%;
-    max-width: 400px;
-    float: right;
-  }
-  .venki__title {
-    text-align: center;
-  }
-
-  /* Медиа-запросы для адаптивности */
-  @media screen and (max-width: 1024px) {
-    .whisper-box {
-      max-width: 100%;
-    }
-
-    .map-tapestry {
-      max-width: 100%;
-      height: 300px;
-    }
-    .stage-curtain {
-      width: 90%;
-    }
-  }
-
-  /* catalog */
-
-  .catalog__inner {
-  }
-  .catalog__main {
-    margin-top: 50px;
-    display: flex;
-  }
-  .catalog__btns {
-    display: flex;
-    gap: 20px;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
-  }
-  .catalog__btns > * {
-    display: inline-block;
-  }
-  .filters__btn {
-    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    width: 250px;
-    font-size: 20px;
-  }
-  .catalog__title {
-    font-size: 30px;
-  }
-  .filters__input {
-    width: 100px;
-  }
-  .catalog__price {
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
-  .filters__material-title {
-    margin-top: 20px;
-  }
-  .catalog__products {
-    padding: 15px;
-    display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
   }
-  .catalog__product {
-    background: var(--green);
-    border-radius: 20px;
+  .doc__inner {
+    flex-wrap: wrap;
   }
-  .catalog__product-text {
-    padding: 20px;
-
-    color: white;
+  .doc__inner img {
+    max-width: 300px;
   }
-  @media (max-width: 1280px) {
-    .service__text {
-      padding: 20px;
-      font-size: 18px;
-    }
-    .venki__inner {
-      flex-direction: column;
-    }
-    .venki__text {
-      font-size: 18px;
-    }
-    .service__inner {
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .doc__inner {
-      flex-wrap: wrap;
-    }
-    .doc__inner img {
-      max-width: 300px;
-    }
-  }
-  @media (max-width: 768px) {
-    .service__card {
-      width: 200px;
-    }
-    .card__text {
-      font-size: 16px;
-    }
-    .container {
-      padding: 0 10px;
-    }
-    .burger {
-      width: 50px;
-      position: absolute;
-      right: 20px;
-    }
-    .nav__krest {
-      position: absolute;
-      right: 20px;
-      filter: invert(100%);
-    }
-    .nav__krest-active {
-      display: block;
-    }
-    .burger-active {
-      display: block;
-    }
-    .nav {
-      display: none;
-      position: absolute;
-      flex-direction: column;
-      top: 50px;
-      right: 50px;
-      z-index: 1;
-      gap: 20px;
-    }
-    .nav-active {
-      display: flex;
-    }
-    .main__phrase {
-      margin-top: 100px;
-      font-size: 36px;
-    }
-    .main__title {
-      font-size: 80px;
-    }
-    .main__subtitle {
-      font-size: 20px;
-    }
-    .main__products {
-      font-size: 22px;
-    }
-    .main {
-      height: calc(var(--main__bg_height) * 0.5);
-    }
-    .main__bg {
-      height: calc(var(--main__bg_height) * 0.5);
-    }
-    .main__bg img {
-      height: calc(var(--main__bg_height) * 0.5);
-    }
-    .doc__text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .venki__text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .service__text {
-      font-size: 18px;
-    }
-    .about {
-      margin-top: 35px;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .about__title {
-      font-size: 24px;
-    }
-    .section__text {
-      font-size: 16px;
-      padding: 10px;
-    }
-    .about img {
-      min-width: 100%;
-      width: 100%;
-      margin: 0 auto;
-    }
-    .sales__block {
-      flex-direction: column;
-      gap: 20px;
-    }
-    .sale__text {
-      font-size: 30px;
-      padding: 25px;
-      width: auto;
-    }
-
-    .photo-strip {
-      height: 80px;
-    }
-
-    .stage-curtain {
-      margin: 20px auto;
-      flex-direction: column;
-    }
-
-    .whisper-box {
-      padding: 15px;
-    }
-
-    .whisper-box * {
-      margin: 10px 15px;
-    }
-
-    .map-tapestry {
-      height: 200px;
-    }
-
-    .contacts-stage {
-      padding: 15px;
-    }
-
-    .contacts-shadow-realm,
-    .contacts-whisper {
-      max-width: 100%;
-    }
-    /* Photo strip adjustments */
-    .photo-strip {
-      height: 80px; /* Slightly reduce height for smaller screens */
-    }
-
-    .text-contacts {
-      font-size: 24px; /* Adjust font size for readability */
-      text-align: center; /* Center text */
-      width: 100%;
-    }
-
-    /* Main container adjustments */
-    .stage-curtain {
-      width: 90%; /* Increase width to use more screen space */
-      margin: 20px auto; /* Reduce margin */
-      display: flex;
-      flex-direction: column; /* Stack elements vertically */
-      align-items: center;
-    }
-
-    /* Whisper box (contact info) */
-    .whisper-box {
-      width: 100%; /* Full width */
-      min-height: 0; /* Remove min-height constraint */
-      margin: 0; /* Reset margins */
-      border-radius: 20px; /* Slightly smaller radius */
-    }
-
-    .whisper-box * {
-      margin: 10px 10px; /* Simplify margins for smaller screens */
-    }
-
-    .phone-indent {
-      margin-left: 10px; /* Reduce indent */
-    }
-
-    .whisper-box p {
-      margin-top: 20px; /* Reduce top margin */
-    }
-
-    /* Map adjustments */
-    .map-tapestry {
-      position: static; /* Remove absolute positioning */
-      width: 100%; /* Full width */
-      height: 300px; /* Slightly reduce height */
-      transform: none; /* Remove transform */
-      margin-top: 20px; /* Add spacing above */
-    }
-
-    /* Contacts stage (payment and bank details) */
-    .contacts-stage {
-      flex-direction: column; /* Stack vertically */
-      padding: 10px; /* Reduce padding */
-      width: 90%; /* Use more screen width */
-    }
-
-    .contacts-whisper,
-    .contacts-shadow-realm {
-      width: 100%; /* Full width */
-      padding: 20px; /* Consistent padding */
-      box-sizing: border-box; /* Include padding in width */
-    }
-
-    .contacts-whisper h4 {
-      font-size: 24px; /* Slightly smaller heading */
-      margin: 0 0 15px 0; /* Adjust margin */
-    }
-
-    .contacts-shadow-realm {
-      border-radius: 20px; /* Match other elements */
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .whisper-box {
-      border-radius: 20px;
-    }
-
-    .contacts-shadow-realm,
-    .contacts-whisper {
-      padding: 15px;
-    }
-
-    .contacts-shadow-realm {
-      border-radius: 20px;
-    }
-  }
+}
+@media (max-width: 768px) {
   footer {
     font-size: 13px;
     text-align: center;
@@ -768,5 +555,219 @@
   .catalog__btns {
     flex-direction: column;
     gap: 10px;
+  }
+  .service__card {
+    width: 200px;
+  }
+  .card__text {
+    font-size: 16px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .burger {
+    width: 50px;
+    position: absolute;
+    right: 20px;
+  }
+  .nav__krest {
+    position: absolute;
+    right: 20px;
+    filter: invert(100%);
+  }
+  .nav__krest-active {
+    display: block;
+  }
+  .burger-active {
+    display: block;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+    gap: 20px;
+  }
+  .nav-active {
+    display: flex;
+  }
+  .main__phrase {
+    margin-top: 100px;
+    font-size: 36px;
+  }
+  .main__title {
+    font-size: 80px;
+  }
+  .main__subtitle {
+    font-size: 20px;
+  }
+  .main__products {
+    font-size: 22px;
+  }
+  .main {
+    height: calc(var(--main__bg_height) * 0.5);
+  }
+  .main__bg {
+    height: calc(var(--main__bg_height) * 0.5);
+  }
+  .main__bg img {
+    height: calc(var(--main__bg_height) * 0.5);
+  }
+  .doc__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .venki__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service__text {
+    font-size: 18px;
+  }
+  .about {
+    margin-top: 35px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about__title {
+    font-size: 24px;
+  }
+  .section__text {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .about img {
+    min-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .sales__block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sale__text {
+    font-size: 30px;
+    padding: 25px;
+    width: auto;
+  }
+
+  .photo-strip {
+    height: 80px;
+  }
+
+  .stage-curtain {
+    margin: 20px auto;
+    flex-direction: column;
+  }
+
+  .whisper-box {
+    padding: 15px;
+  }
+
+  .whisper-box * {
+    margin: 10px 15px;
+  }
+
+  .map-tapestry {
+    height: 200px;
+  }
+
+  .contacts-stage {
+    padding: 15px;
+  }
+
+  .contacts-shadow-realm,
+  .contacts-whisper {
+    max-width: 100%;
+  }
+  /* Photo strip adjustments */
+  .photo-strip {
+    height: 80px; /* Slightly reduce height for smaller screens */
+  }
+
+  .text-contacts {
+    font-size: 24px; /* Adjust font size for readability */
+    text-align: center; /* Center text */
+    width: 100%;
+  }
+
+  /* Main container adjustments */
+  .stage-curtain {
+    width: 90%; /* Increase width to use more screen space */
+    margin: 20px auto; /* Reduce margin */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  /* Whisper box (contact info) */
+  .whisper-box {
+    width: 100%; /* Full width */
+    min-height: 0; /* Remove min-height constraint */
+    margin: 0; /* Reset margins */
+    border-radius: 20px; /* Slightly smaller radius */
+  }
+
+  .whisper-box * {
+    margin: 10px 10px; /* Simplify margins for smaller screens */
+  }
+
+  .phone-indent {
+    margin-left: 10px; /* Reduce indent */
+  }
+
+  .whisper-box p {
+    margin-top: 20px; /* Reduce top margin */
+  }
+
+  /* Map adjustments */
+  .map-tapestry {
+    position: static; /* Remove absolute positioning */
+    width: 100%; /* Full width */
+    height: 300px; /* Slightly reduce height */
+    transform: none; /* Remove transform */
+    margin-top: 20px; /* Add spacing above */
+  }
+
+  /* Contacts stage (payment and bank details) */
+  .contacts-stage {
+    flex-direction: column; /* Stack vertically */
+    padding: 10px; /* Reduce padding */
+    width: 90%; /* Use more screen width */
+  }
+
+  .contacts-whisper,
+  .contacts-shadow-realm {
+    width: 100%; /* Full width */
+    padding: 20px; /* Consistent padding */
+    box-sizing: border-box; /* Include padding in width */
+  }
+
+  .contacts-whisper h4 {
+    font-size: 24px; /* Slightly smaller heading */
+    margin: 0 0 15px 0; /* Adjust margin */
+  }
+
+  .contacts-shadow-realm {
+    border-radius: 20px; /* Match other elements */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .whisper-box {
+    border-radius: 20px;
+  }
+
+  .contacts-shadow-realm,
+  .contacts-whisper {
+    padding: 15px;
+  }
+
+  .contacts-shadow-realm {
+    border-radius: 20px;
   }
 }
