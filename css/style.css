@@ -35,7 +35,7 @@ header {
   background-color: var(--green);
   color: white;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
 }
 
@@ -183,6 +183,8 @@ header {
   height: 100px; /* Новая высота */
   background-image: url("../img/bg.jpeg");
   overflow: hidden; /* Обрезаем лишнее */
+  margin-top: 66px;
+  z-index: -1;
 }
 
 /* Затемнение через полупрозрачный слой */
@@ -202,6 +204,7 @@ header {
   font-size: 28px; /* Размер текста */
   z-index: 1; /* Поверх затемнения */
   font-weight: 400;
+  padding-top: 30px;
 }
 
 /* Общий контейнер */
@@ -848,4 +851,81 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+/* Основная обёртка */
+.site-nav-header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.site-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.site-nav-logo a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Навигационное меню */
+.site-nav-menu .site-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.site-nav-menu .site-nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.site-nav-links li{
+  margin-left: 8vh;
+}
+/* Бургер */
+.site-nav-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.site-nav-burger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .site-nav-burger {
+    display: flex;
+  }
+
+  .site-nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #2f4f4f;
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-nav-menu.active {
+    display: block;
+  }
+
+  .site-nav-menu .site-nav-links {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .site-nav-menu .site-nav-links li {
+    padding: 10px 0;
+  }
 }
